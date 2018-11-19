@@ -1,0 +1,212 @@
+@import 'colors.scss';
+
+body {
+    min-width: 300px;
+    background-color: $background
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    margin-top: 72px;
+    margin-bottom: 0.5em;
+}
+
+p, ul, ol, li, nav, h1, h2, h3, h4, h5, h6, a, small {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: $text;
+}
+
+h1 {
+    font-size: 96px;
+}
+
+h2 {
+    font-size: 72px;
+}
+
+h3 {
+    font-size: 48px;
+}
+
+h4 {
+    font-size: 36px;
+}
+
+h5 {
+    font-size: 24px;
+}
+
+h6 {
+    font-size: 18px;
+}
+
+p, li, a, nav {
+    font-size: 18px;
+}
+
+p, ul, ol {
+    line-height: 1.7;
+    text-align: justify;
+    margin-bottom: 18px;
+    font-weight: 300;
+}
+
+small {
+    margin: 4px;
+    font-size: 12px;
+    color: $lowlight;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    background: $background;
+    font-weight: bold;
+
+    .links {
+        padding: 12px 48px;
+        max-width: 900px;
+        margin: 16px auto;
+        
+        .spacer {
+            display: inline-block;
+            height: 100%;
+            width: 70px;
+        }
+
+        a {
+            text-decoration: none;
+            margin-right: 24px;
+        }
+    }
+}
+
+.container {
+    max-width: 55%;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    margin: 0 auto;
+
+    img {
+        width: 100%;
+        display: block;
+        border-radius: 4px;
+        margin-top: 72px;
+        margin-bottom: 48px;
+    }
+
+    .album img {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .album {
+        margin-top: 72px;
+        margin-bottom: 48px;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+    
+    h2 {
+        font-size: 36px;
+    }
+    
+    h3 {
+        font-size: 24px;
+    }
+    
+    h4 {
+        font-size: 18px;
+    }
+    
+    h5 {
+        font-size: 18px;
+    }
+    
+    h6 {
+        font-size: 18px;
+    }
+
+    p {
+        margin-bottom: 24px;
+    }
+
+    strong {
+        font-weight: bold;
+    }
+
+    em {
+        font-style: italic;
+    }
+
+    a {
+        color: $highlight;
+        font-weight: inherit;
+        &:visited {
+            color: darken($color: $highlight, $amount: 5%);
+        }
+    }
+}
+
+.title {
+    margin-bottom: 24px;
+    h1, small {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        margin-bottom: 2px;
+    }
+}
+
+ol, li {
+    @media (max-width: 450px) {
+        text-indent: 1.5em;
+        &:before {
+            left: -1.5em;
+        }
+    }
+}
+
+footer {
+    text-align: center;
+    font-weight: 500;
+    width: 55%;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    border-top: 2px solid darken($color: $background, $amount: 10%);
+    p {
+        color: $lowlight;
+        text-decoration: none;
+        text-align: inherit;
+        font-size: 80%;
+        font-weight: 400;
+        margin: 0;
+        a {
+            color: $lowlight;
+            text-decoration: none;
+            margin-right: 0px;
+            margin-left: 0px;
+            font-size: inherit;
+            font-weight: inherit;
+            &:visited {
+                color: $lowlight;
+            }
+        }
+    }
+
+    a {
+        color: $highlight;
+        text-decoration: none;
+        margin-right: .5em;
+        margin-left: .5em;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        &:visited {
+            color: darken($color: $highlight, $amount: 5%);
+        }
+    }
+}
