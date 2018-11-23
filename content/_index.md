@@ -1,8 +1,9 @@
 +++
-title = "home"
+title = "Home"
 sort_by = "date"
 template = "home.html"
 +++
 
 # Home
+
 The homepage for Noah Graff.

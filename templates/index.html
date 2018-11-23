@@ -6,7 +6,7 @@
     <meta name="description" content="Portfolio website for Noah Graff">
     <meta name="keywords" content="ntgg, Noah, games, rust, c++, game dev, game development, Noah Graff, GraffixGames, ngraff, @graffixgames">
     <meta name="author" content="Noah Graff">
-    <title>ntgg.io{% if page.title %} | {{ page.title }} {% endif %}</title> 
+    <title>ntgg.io{% block title %}{% if section.title %} | {{ section.title }} {% endif %}{% endblock title %}</title> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/main.css">
   </head>
@@ -16,6 +16,7 @@
       <div class="links">
         <a href="/">Home</a>
         <a href="/projects">Projects</a>
+        <a href="/blog">Blog</a>
       </div>
     </nav>
     {% block content %}
