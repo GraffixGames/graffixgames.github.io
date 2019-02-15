@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio website for Noah Graff">
-    <meta name="keywords" content="ntgg, Noah, games, rust, c++, game dev, game development, Noah Graff, GraffixGames, ngraff, @graffixgames">
+    <meta name="keywords" content="ntgg, Noah, games, rust, game dev, game development, Noah Graff, GraffixGames, ngraff, @ntgg_">
     <meta name="author" content="Noah Graff">
     <title>ntgg.io{% block title %}{% if section.title %} | {{ section.title }} {% endif %}{% endblock title %}</title> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -25,7 +25,7 @@
         {% for page in section.pages %}
           <section>
             <a class="header-link" href="{{ page.permalink }}">
-              <h3 class="title">{{ page.title }}</h3>
+              <h1 class="title">{{ page.title }}</h1>
             </a>
             <p>
               {{ page.content | safe | striptags | truncate }}
@@ -48,7 +48,8 @@
     <footer>
       <span class="bar"></span>
       <a href="https://github.com/GraffixGames"><i class="fa fa-github"></i> github</a>
-      <a href="https://twitter.com/Graffix_Games"><i class="fa fa-twitter"></i> twitter</a>
+      <a href="https://gitlab.com/ntgg"><i class="fa fa-gitlab"></i> gitlab</a>
+      <a href="https://twitter.com/ntgg_"><i class="fa fa-twitter"></i> twitter</a>
       <a href="https://ntgg.itch.io/"><i class="fa fa-gamepad"></i> itch.io</a>
       <a href="mailto:graffixgame@gmail.com"><i class="fa fa-envelope"></i> email</a>
       <p>website made using <a href="https://www.getzola.org/">zola</a>.</p>

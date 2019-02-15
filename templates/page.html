@@ -4,8 +4,12 @@
 
 {% block content %}
 <div class="container">
-  {% if page.title %}<div class="title"><h1>{{ page.title }}</h1></div>{% endif %}
-  <small>{{ page.date }}</small>
+  {% if page.title %}
+  <div class="title">
+    <h1>{{ page.title }}</h1>
+    <small>{{ page.date }}</small>
+  </div>
+  {% endif %}
   <div class="content">{{ page.content | safe }}</div>
 </div>
 {% endblock content %}

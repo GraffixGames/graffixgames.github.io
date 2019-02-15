@@ -8,9 +8,8 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
-    margin-top: 72px;
-    margin-bottom: 0.5em;
 }
+
 
 p, ul, ol, li, nav, h1, h2, h3, h4, h5, h6, a, small {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -49,12 +48,13 @@ p, ul, ol {
     line-height: 1.7;
     text-align: justify;
     margin-bottom: 18px;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 small {
     margin: 4px;
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: 600;
     color: $lowlight;
 }
 
@@ -62,16 +62,15 @@ nav {
     position: fixed;
     top: 0;
     margin-top: 0px;
-    padding-top: 0px;
     width: 100%;
     background: $background;
     font-weight: bold;
-
+    
     .links {
         padding: 8px 36px;
         max-width: 900px;
         margin: 16px auto;
-
+        
         a {
             text-decoration: none;
             margin-right: 24px;
@@ -81,9 +80,18 @@ nav {
 
 .container {
     max-width: 55%;
-    padding-top: 48px;
+    padding-top: 52px;
     padding-bottom: 48px;
     margin: 0 auto;
+    
+    .title {
+        padding: 0px;
+        h1 {
+            font-size: 48px;
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+    }
 
     img {
         width: 100%;
@@ -92,7 +100,7 @@ nav {
         margin-top: 72px;
         margin-bottom: 48px;
     }
-
+    
     .album img {
         margin-top: 0;
         margin-bottom: 0;
@@ -102,35 +110,35 @@ nav {
         margin-top: 72px;
         margin-bottom: 48px;
     }
-
-    h1 {
-        font-size: 48px;
-    }
     
-    h2 {
+    h1 {
         font-size: 36px;
     }
     
-    h3 {
+    h2 {
         font-size: 24px;
+    }
+
+    h3 {
+        font-size: 18px;
     }
     
     h4 {
-        font-size: 18px;
+        font-size: 16px;
     }
     
     h5 {
-        font-size: 18px;
+        font-size: 16px;
     }
     
     h6 {
-        font-size: 18px;
+        font-size: 16px;
     }
-
+    
     p {
         margin-bottom: 24px;
     }
-
+    
     strong {
         font-weight: bold;
     }
@@ -146,16 +154,21 @@ nav {
             color: darken($color: $highlight, $amount: 5%);
         }
     }
-}
 
-.title {
-    margin-bottom: 24px;
-    h1, small {
-        padding-left: 0;
-        padding-right: 0;
-    }
-    h1, h2, h3, h4, h5, h6 {
-        margin-bottom: 2px;
+    table {
+        th {
+            font-size: 24px;
+            background-color: $background;
+        }
+        td {
+            font-size: 18px;
+        }
+        
+        tr:nth-child(odd) {
+            background-color: darken($color: $background, $amount: 3%);
+        }
+        
+        margin: 0 auto;
     }
 }
 
