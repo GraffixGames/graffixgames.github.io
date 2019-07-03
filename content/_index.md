@@ -6,4 +6,4 @@ template = "home.html"
 
 # Home
 
-The homepage for Noah Graff.
+Just a placeholder for now
