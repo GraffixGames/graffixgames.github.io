@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="ntgg, Noah, Noah Graff, GraffixGames, ngraff, @ntgg_">
+    <meta name="description" content="Personal website for Noah Graff">
+    <meta name="author" content="Noah Graff">
+    <title>ntgg.io{% block title %}{% endblock title %}</title>
+    {% block style %}<link rel="stylesheet" href="/main.css">{% endblock style %}
+  </head>
+  <body>
+    <div id='container'>
+      <div id='navbar'>
+        <nav class='hcenter'>
+          <p>ntgg.io</p>
+          <a class='no-decoration' href='/'>home</a>
+          <a class='no-decoration' href='/blog'>blog</a>
+          <a class='no-decoration' href='/projects'>projects</a>
+        </nav>
+      </div>
+      <div id="content" class='hcenter'>
+        {% block content %}
+        {% endblock content %}
+      </div>
+      <div id='footbar'>
+        <footer class='hcenter'>
+          <a class='no-decoration' href='https://git.sr.ht/~ntgg'>sourcehut</a>
+          <a class='no-decoration' href='https://github.com/ntgraff'>github</a>
+          <a class='no-decoration' href='https://twitter.com/ntgg_'>twitter</a>
+          <a class='no-decoration' href='mailto:noah@ntgg.io'>email</a>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
+

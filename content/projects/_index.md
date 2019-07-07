@@ -2,5 +2,7 @@
 title = "Projects"
 description = "Personal projects"
 sort_by = "date"
-template = "index.html"
+template = "section.html"
 +++
+
+I'll get to this too
