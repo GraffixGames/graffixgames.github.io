@@ -1,19 +1,40 @@
 :root {
 	--content-width: 50rem;
+	--body-background-color: #FFF;
+	--body-text-color: #000;
+	--nav-background-color: #222;
+	--nav-text-color: #FFF;
+	--nav-highlight-color: #D38D5D;
+	--footer-background-color: #777;
+	--footer-text-color: #111;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--body-background-color: #000;
+		--body-text-color: #FFF;
+		--nav-background-color: #777;
+		--nav-text-color: #222;
+		--nav-highlight-color: #7FC0D0;
+		--footer-background-color: #222;
+		--footer-text-color: #AAA;
+	}
 }
 
 body {
 	margin: 0;
+	color: var(--body-text-color);
+	background-color: var(--body-background-color);
 }
 
 #navbar {
 	width: 100%;
-	background-color: #222;
+	background-color: var(--nav-background-color);
 }
 
 #footbar {
 	width: 100%;
-	background-color: #777;
+	background-color: var(--footer-background-color);
 }
 
 .hcenter {
@@ -38,16 +59,16 @@ nav, footer {
 }
 
 nav a, nav p {
-	color: #FFF;
+	color: var(--nav-text-color);
 	margin-right: 1rem;
 }
 
 nav p {
-	color: #D38D5D;
+	color: var(--nav-highlight-color);
 }
 
 footer a {
-	color: #111;
+	color: var(--footer-text-color);
 	margin-right: 1rem;
 }
 
