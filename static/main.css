@@ -2,6 +2,7 @@
 	--content-width: 50rem;
 	--body-background-color: #FFF;
 	--body-text-color: #000;
+	--body-highlight-color: #808AEB;
 	--nav-background-color: #222;
 	--nav-text-color: #FFF;
 	--nav-highlight-color: #D38D5D;
@@ -13,9 +14,10 @@
 	:root {
 		--body-background-color: #000;
 		--body-text-color: #FFF;
+		--body-highlight-color: #D38D5D;
 		--nav-background-color: #777;
 		--nav-text-color: #222;
-		--nav-highlight-color: #7FC0D0;
+		--nav-highlight-color: #808AEB;
 		--footer-background-color: #222;
 		--footer-text-color: #AAA;
 	}
@@ -40,6 +42,14 @@ body {
 
 .hcenter {
 	margin: auto;
+}
+
+.title-with-info h1 {
+	margin-bottom: 0;
+}
+
+.title-with-info a {
+    color: var(--body-highlight-color);
 }
 
 .no-decoration {
