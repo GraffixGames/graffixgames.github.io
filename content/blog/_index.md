@@ -5,4 +5,6 @@ sort_by = "date"
 template = "section.html"
 +++
 
-I'll get to it
+Just some of my thoughts
+
+---
