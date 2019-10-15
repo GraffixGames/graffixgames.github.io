@@ -49,7 +49,7 @@ body {
 }
 
 .title-with-info a {
-    color: var(--body-highlight-color);
+	color: var(--body-highlight-color);
 }
 
 .no-decoration {

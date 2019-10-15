@@ -5,4 +5,7 @@ sort_by = "date"
 template = "section.html"
 +++
 
-I'll get to this too
+Some things I've done. There are always more projects on my [GitHub](https://github.com/ntgraff) or
+[sourcehut](https://git.sr.ht/~ntgg)
+
+---
