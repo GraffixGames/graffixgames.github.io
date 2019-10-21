@@ -95,3 +95,8 @@ footer a {
 	padding: 1rem;
 	text-align: left;
 }
+
+#content a {
+	color: var(--body-highlight-color);
+	text-decoration: none;
+}
